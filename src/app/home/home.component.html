@@ -1,0 +1,9 @@
+<div class="main-page">
+    <h1>Welcome to Task Manager</h1>
+    <img src="assets/main-image.png" alt="Main Page Image" class="main-image">
+    <p>Manage your tasks effectively and stay organized!</p>
+  </div>  
+
+<app-add-task (taskAdded)="onTaskAdded($event)"></app-add-task>
+<app-task-list [tasks]="tasks" (taskDeleted)="onTaskDeleted($event)"></app-task-list>
+

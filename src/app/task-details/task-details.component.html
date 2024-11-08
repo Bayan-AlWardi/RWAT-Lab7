@@ -1,0 +1,26 @@
+<div class="task-details-container">
+    <h2>Task Details</h2>
+    <p><strong>Task Name:</strong> {{ (task?.name || '') | capitalize }}</p>
+  
+    <label for="newSpecification"><strong>Add New Specification:</strong></label>
+    <br>
+    <input
+      id="newSpecification"
+      [(ngModel)]="newSpecification"
+      placeholder="Enter a new specification"
+    >
+    <br>
+    <br>
+    <button (click)="addSpecification()">Add Specification</button>
+  
+    <h3>Specifications</h3>
+    <ul>
+      <li *ngFor="let spec of task?.specifications; let i = index">
+        {{ spec }}
+        <button (click)="deleteSpecification(i)" class="delete">Delete</button>
+      </li>
+    </ul>
+  
+    <button (click)="goBack()" class="back-home">Back to Home</button>
+  </div>
+  

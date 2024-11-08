@@ -1,0 +1,27 @@
+.main-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .main-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    color: rgb(54, 53, 53);
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  p {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
